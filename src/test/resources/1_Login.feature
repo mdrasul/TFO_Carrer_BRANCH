@@ -5,13 +5,14 @@ Feature: Login Mechanism Test scearios
     And I browse to mct website using url "https://www.demo.iscripts.com/multicart/demo/index.php"
     And I click on login link
 
- @wipnew
+ @debug_may25
   Scenario: Successfull Login as a User
     And I Enter user id as "user"
     And I Enter password as "pass"
     When I Click the login button
     Then I expect my profile name text as "james williams"
 
+	@debug_may25
   Scenario: Login with Invalid ID
     And I Enter user id as "invalid"
     And I Enter password as "pass"
